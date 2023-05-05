@@ -2569,3 +2569,33 @@ blockquote footer, blockquote small, blockquote .small {
   font-size: small;
   line-height: 18px;
 }
+
+.container-tech-icons {
+  display: flex;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-list img {
+  width: calc(19% - 10px);
+  height: auto;
+  margin-bottom: 20px;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .image-list img {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-list img {
+    width: 100%;
+  }
+}
